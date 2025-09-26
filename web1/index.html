@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pasar Saham - Informasi Terkini</title>
+    <title>Penawaran Pasar Saham</title>
     <style>
         * {
             margin: 0;
@@ -12,118 +12,138 @@
         }
 
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
             line-height: 1.6;
-            background-color: #f4f4f4;
         }
 
         header {
-            background-color: #2d3e50;
+            background-color: #007bff;
             color: white;
-            padding: 1rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            padding: 20px;
+            text-align: center;
         }
 
-        header .logo img {
-            width: 120px;
-            height: auto;
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
         }
 
-        header nav ul {
-            list-style: none;
-            display: flex;
+        header p {
+            font-size: 1.2rem;
         }
 
-        header nav ul li {
-            margin-right: 20px;
-        }
-
-        header nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 1.1rem;
-        }
-
-        header nav ul li a:hover {
-            text-decoration: underline;
-        }
-
-        main {
-            padding: 3rem 2rem;
+        .container {
             max-width: 1200px;
-            margin: auto;
+            margin: 40px auto;
+            padding: 0 20px;
         }
 
-        section h2 {
-            color: #2d3e50;
-            margin-bottom: 20px;
-            font-size: 2rem;
-        }
-
-        .card {
+        .offer-card {
             display: flex;
             background-color: white;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
             overflow: hidden;
-            margin-bottom: 20px;
+            transition: transform 0.3s ease;
         }
 
-        .card img {
-            width: 50%;
+        .offer-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .offer-card img {
+            width: 40%;
             height: auto;
             object-fit: cover;
         }
 
-        .card-content {
-            padding: 1.5rem;
-            width: 50%;
+        .offer-card .card-details {
+            padding: 20px;
+            width: 60%;
         }
 
-        .card-content h3 {
+        .offer-card .card-details h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
             color: #333;
-            margin-bottom: 10px;
-            font-size: 1.5rem;
         }
 
-        .card-content p {
-            color: #777;
+        .offer-card .card-details p {
+            color: #555;
             font-size: 1rem;
-            line-height: 1.5;
+            margin-bottom: 20px;
         }
 
-        .grafik {
-            display: block;
-            margin: 20px auto;
-            max-width: 100%;
-            border-radius: 10px;
+        .offer-card .card-details .price {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #28a745;
+            margin-bottom: 20px;
         }
 
-        ul {
-            list-style-type: square;
-            margin-left: 20px;
+        .offer-card .card-details .btn {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
 
-        ul li {
-            margin-bottom: 10px;
+        .offer-card .card-details .btn:hover {
+            background-color: #0056b3;
         }
 
         footer {
-            background-color: #2d3e50;
+            background-color: #007bff;
             color: white;
             text-align: center;
-            padding: 1rem;
-            margin-top: 2rem;
+            padding: 15px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            font-size: 1rem;
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <!-- Gambar logo yang relevan -->
-            <img src="https://www.pngitem.com/pimgs/m/106-1068702_stock-market-logo-png-transparent-png.png" alt="Logo Pasar Saham">
+
+<header>
+    <h1>Penawaran Pasar Saham Terkini</h1>
+    <p>Temukan peluang terbaik untuk investasi saham dengan penawaran pasar terbaru</p>
+</header>
+
+<div class="container">
+
+    <!-- Penawaran Saham 1 -->
+    <div class="offer-card">
+        <img src="https://via.placeholder.com/400x250" alt="Penawaran Saham 1">
+        <div class="card-details">
+            <h2>Penawaran Saham Teknologi Terkini</h2>
+            <p>Perusahaan XYZ menawarkan sahamnya dengan harga spesial di pasar sekunder. Ini adalah peluang besar bagi investor yang ingin mengakses teknologi masa depan.</p>
+            <p class="price">Rp 1.200.000 per lembar</p>
+            <a href="#" class="btn">Investasi Sekarang</a>
         </div>
-        <nav>
-            <ul>
+    </div>
+
+    <!-- Penawaran Saham 2 -->
+    <div class="offer-card">
+        <img src="https://via.placeholder.com/400x250" alt="Penawaran Saham 2">
+        <div class="card-details">
+            <h2>Penawaran Saham Energi Terbarukan</h2>
+            <p>Saham perusahaan ABC yang bergerak di sektor energi terbarukan saat ini tersedia dengan potongan harga spesial. Segera ambil kesempatan ini untuk berinvestasi di sektor ramah lingkungan.</p>
+            <p class="price">Rp 850.000 per lembar</p>
+            <a href="#" class="btn">Beli Saham</a>
+        </div>
+    </div>
+
+    <!-- Penawaran Saham 3 -->
+    <div class="offer-card">
+        <img src="https://via.placeholder.com/400x250" alt="Penawaran Saham 3">
+        <div class="card-details">
+            <h2>Penawaran Saham Startup Digital</h2>
+            <p>Saham dari startup digital yang berkembang pesat sekarang tersedia di pasar. Investasi
